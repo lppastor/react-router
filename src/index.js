@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Login from './components/login';
-import Dashboard from './components/dashboard';
-import CadastroCliente from './components/cadastroCliente';
+import Login from './pages/login';
+import Dashboard from './pages/dashboard';
+import CadastroCliente from './pages/cadastroCliente';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
