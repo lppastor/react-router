@@ -1,14 +1,14 @@
 import './Header.css'
-import { FiLogOut } from "react-icons/fi";
+import { FiLogOut, FiAlignJustify } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-
-            <header>
-                <span id='navegacao-atual'>&gt; Dashboard</span>
-                <span id="sair-app"><FiLogOut/></span>
+            <header className='div-header'>
+                <span id='expandir-recolher'><FiAlignJustify/></span>
+                <span id='navegacao-atual'>Dashboard</span>
+                <span id="sair-app"><Link to="/login"><FiLogOut/></Link></span>
             </header>
-     
     )
 }
 

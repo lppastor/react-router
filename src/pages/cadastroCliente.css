@@ -1,10 +1,12 @@
-.container-row {
+.container {
     display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
 .app {
     display: flex;
-    flex-direction: column;
+    width: calc(80% - 300px); /* (100% - 20% (border-left + border-rigth)) - 300px menu */
     margin: 5% 10%;
     border: 1px solid black;
 }

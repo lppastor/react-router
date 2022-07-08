@@ -1,29 +1,37 @@
-.container-col {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    width: 100%;
-    height: 102px;
+.div-header {
+    width: calc(100% - 300px);
+    height: 120px;
     background-color: rgb(236, 236, 236);
     border-bottom: 1px solid rgba(0,0,0,.1);
     display: flex;
     align-items: center;
 }
 
+@media (max-width: 767px) {
+    .div-header {
+        width: 100%;
+    }
+}
+
 #navegacao-atual {
-    margin-left: 50px;
     font-size: 18px;
+    margin-left: 50px;
     color: rgb(112, 112, 112);
 }
 
 #sair-app {
-    position: fixed;
-    right: 0;
-    margin-right: 50px;
-    font-size: 20px;
     color: rgb(112, 112, 112);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 50px;
+    padding-top: 6px;
+    font-size: 20px;
 }
 
+#expandir-recolher {
+    margin-left: 50px;
+    font-size: 20px;
+    padding-top: 6px;
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+}
