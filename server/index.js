@@ -16,11 +16,13 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
+//"INSERT INTO usuarioTeste (cdUsuario,usuario) VALUES ('001','luis')",
+
 connection.query(
-  "SELECT * FROM administracao",
+  "SELECT * FROM usuarioTeste",
   function (error, results, fields) {
     if (error) throw error;
-    console.log("The solution is: ", results[0]);
+    console.log("The solution is: ", results[0].cdUsuario);
   }
 );
 
